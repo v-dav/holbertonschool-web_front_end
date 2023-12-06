@@ -4,6 +4,9 @@
 ![Google Chrome](https://img.shields.io/badge/Chrome-Latest-blue?style=for-the-badge&logo=google-chrome&logoColor=white)
 ![Mozilla Firefox](https://img.shields.io/badge/Firefox-Latest-orange?style=for-the-badge&logo=mozilla-firefox&logoColor=white)
 
+![barn-images-t5YUoHW6zRo-unsplash](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/05c12f7e-1979-4c95-bddd-335adb6b46df)
+
+
 ## Project Overview
 
 Welcome to the Developer Tools project! In this project, you'll dive into the world of browser Developer Tools to explore and analyze web pages. From opening the Developer Tools on various browsers to using advanced features like inspecting elements, auditing pages, running snippets, and more, this project aims to make you proficient in utilizing Developer Tools for web development.
