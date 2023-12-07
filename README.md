@@ -1,5 +1,8 @@
 # :desktop_computer: Web Front-end Learning Journey
 
+![jackson-sophat-_t-l5FFH8VA-unsplash](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/eeae4fb0-e01f-41cd-ad60-2dd5ab996aff)
+
+
 ## Introduction
 
 Welcome to my Front End Web Learning journey repository at Holberton School. During this journey, I've gained a solid foundation in front-end development skills, covering HTML and CSS.
