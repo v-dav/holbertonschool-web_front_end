@@ -15,9 +15,11 @@ This repository contains all the projects and exercises I've undertaken througho
 
 Here are the technologies that I've learned and used throughout my journey:
 
-- HTML5: I learned to structure web pages and use semantic HTML elements for better SEO and accessibility.
+- **HTML5**: I learned to structure web pages and use semantic HTML elements for better SEO and accessibility.
   
-- CSS3: I learned to style web pages and use modern layout techniques like Flexbox and Grid.
+- **CSS3**: I learned to style web pages and use modern layout techniques like Flexbox and Grid.
   
-- Git and GitHub: I used Git and GitHub for version control and collaboration on projects.
+- **Sass:** I also explored the power of Sass, a popular CSS preprocessor, to enhance my styling workflow. With features like variables, nesting, and mixins, Sass allowed me to write cleaner and more maintainable stylesheets, ultimately saving time and effort in the development process.
+  
+- **Git and GitHub:** I used Git and GitHub for version control and collaboration on projects.
 
