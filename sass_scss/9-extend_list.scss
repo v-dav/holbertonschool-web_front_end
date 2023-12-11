@@ -1,0 +1,18 @@
+/*a sass file with extend*/
+%font-size-shared {
+	font-size: 12px;
+}
+
+.info {
+	@extend %font-size-shared;
+}
+
+.success {
+	@extend %font-size-shared;
+	color: #00FF00;
+}
+
+.warning {
+	@extend %font-size-shared;
+	color: #FF0000;
+}
