@@ -1,18 +1,14 @@
 /*a sass file with extend*/
-%font-size-shared {
+.info {
 	font-size: 12px;
 }
 
-.info {
-	@extend %font-size-shared;
-}
-
 .success {
-	@extend %font-size-shared;
+	@extend .info;
 	color: #00FF00;
 }
 
 .warning {
-	@extend %font-size-shared;
+	@extend .info;
 	color: #FF0000;
 }
