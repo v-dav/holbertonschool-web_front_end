@@ -1,7 +1,7 @@
 /* a sass file using nested declarations with a hover*/
 button {
 	color: #FF0000;
-	:hover {
+	&:hover {
 		color:#00FF00;
 	}
 }
