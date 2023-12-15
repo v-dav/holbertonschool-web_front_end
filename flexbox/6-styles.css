@@ -361,6 +361,10 @@ a:active {
 /* Grid
 	  ============================= */
 
+.row {
+	display: flex;
+}
+
 ul.row {
 	margin: -1rem;
 	padding: 0;
@@ -377,10 +381,6 @@ ul.row {
 
 .col-1-2 {
 	width: calc((100% / 2) - 2rem);
-}
-
-.row {
-	display: flex;
 }
 
 /* Navbar
@@ -407,6 +407,12 @@ ul.row {
 	margin: var(--nav-item-margin);
 }
 
+.nav .nav-link {
+	display: block;
+	padding: 0.5rem 0;
+	position: relative;
+}
+
 .nav .nav-link:hover {
 	color: var(--nav-item-link-hover);
 	text-decoration: none;
@@ -431,11 +437,6 @@ ul.row {
 /* Header
 	  ============================= */
 
-.header-container {
-	display: flex;
-	justify-content: space-between;
-}
-
 .header {
 	padding: var(--header-padding);
 	position: relative;
@@ -443,7 +444,14 @@ ul.row {
 	background: transparent;
 }
 
+.header-logo {}
 
+.header-logo a {}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+}
 
 /* Footer
 	  ============================= */
