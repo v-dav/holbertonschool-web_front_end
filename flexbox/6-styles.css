@@ -394,6 +394,9 @@ ul.row {
 	display: flex;
 }
 
+.nav .nav-item {
+	
+}
 
 .nav .nav-link {
 	display: block;
