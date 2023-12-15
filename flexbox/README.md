@@ -49,6 +49,16 @@ Ensure the following requirements are met:
 - All code executed on Ubuntu 18.04 using Python 3.7.x
 - All files should end with a new line
 
+## 📸 Screenshots
+### The Main webpage (HTML & CSS files 1 - 9)
+![Main html](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/14192562-2411-4191-9c6f-8df6b68b8a02)
+
+### The Article webpage (HTML & CSS files 10 - 14 and 100)
+![Article html](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/5173b68b-5139-4430-a645-ac0f98a4dd8a)
+
+### Flexbox Exercice (HTML & CSS file 101)
+![Flexbox](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/68988411-ef8a-4379-a788-0595558a18ac)
+
 ##  🙇 Author
 
 - [Vladimir Davidov](https://github.com/v-dav) - Holberton School
