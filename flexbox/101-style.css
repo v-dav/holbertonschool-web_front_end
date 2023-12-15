@@ -1,0 +1,46 @@
+.box {
+	border: 1px black solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.box3 {
+	font-size: 100px;
+	width: 300px;
+	background-color: chocolate;
+	
+}
+
+.box2, .box4 {
+	font-size: 45px;
+	width: 150px;
+}
+
+.box1, .box5 {
+	font-size: 15px;
+	width: 75px;
+}
+
+.box1 {
+	background-color: aquamarine;
+}
+
+.box2 {
+	background-color: blue;
+}
+
+.box4 {
+	background-color: magenta;
+}
+
+.box5 {
+	background-color: yellowgreen;
+}
