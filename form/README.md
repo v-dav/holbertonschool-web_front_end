@@ -61,7 +61,10 @@ Ensure the following requirements are met:
 
 Feel free to experiment with different form types and create user-friendly, accessible forms!
 
-## 📸 Screenshots
+## 📸 Screenshot
+
+![_Users_Vlad_Downloads_07-article html](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/9eae9dc3-c7eb-4769-bb22-f2425a5cf854)
+
 
 ## 🙇 Author
 [Vladimir Davidov](https://github.com/v-dav) - Holberton School
