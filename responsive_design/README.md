@@ -34,11 +34,6 @@ Explore these resources to enhance your understanding of responsive design:
 - [Media Queries | A collection of inspirational websites using media queries and responsive web design](https://mediaqueri.es/)
 - [Responsive Design Newsletter](https://responsivedesign.is/news/)
 
-
-
-## 📸 Screenshots
-
-
 ##  🙇 Author
 
 [Vladimir Davidov](https://github.com/v-dav) - Holberton School
