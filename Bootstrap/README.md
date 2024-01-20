@@ -37,6 +37,8 @@ By the end of this project, you'll have a strong grasp of:
 
 ## 📸 Screenshots
 ![1-index](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/7b0049b6-da34-413c-99fa-029069d7e29a)
+![2-index](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/826f630d-99aa-43e5-8335-c7eb13ca2199)
+
 
 
 ##  🙇 Author
