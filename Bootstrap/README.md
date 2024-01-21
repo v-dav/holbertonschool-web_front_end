@@ -48,6 +48,8 @@ By the end of this project, you'll have a strong grasp of:
 ### Tabs
 ![4-index-ezgif com-optimize](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/66449823-9da6-48eb-8aca-12081dcfc82b)
 
+### Responsive display/hide
+![5-index](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/a2d08c11-777c-4911-8b30-87d4aa050365)
 
 
 ##  🙇 Author
