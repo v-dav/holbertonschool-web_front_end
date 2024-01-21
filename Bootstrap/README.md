@@ -45,6 +45,9 @@ By the end of this project, you'll have a strong grasp of:
 ### Cards
 ![3-index](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/180e1525-b6fd-45bb-bd45-7418c7b3a7d3)
 
+### Tabs
+![4-index-ezgif com-optimize](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/66449823-9da6-48eb-8aca-12081dcfc82b)
+
 
 
 ##  🙇 Author
