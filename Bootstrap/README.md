@@ -51,6 +51,9 @@ By the end of this project, you'll have a strong grasp of:
 ### Responsive display/hide
 ![5-index](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/a2d08c11-777c-4911-8b30-87d4aa050365)
 
+### Overwrite Bootstrap with custom CSS
+![6-index](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/0b1daf3f-25ab-49e5-92d6-bd7c4bb38199)
+
 
 ##  🙇 Author
 
