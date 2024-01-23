@@ -2,6 +2,9 @@
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-Programming-yellow?style=for-the-badge&logo=javascript&logoColor=white)
 
+![image](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/f77708bf-d784-4b44-912e-de5c324a7e7a)
+
+
 ## 🧐 Project Overview
 
 Welcome to the JavaScript Advanced project! This project explores advanced JavaScript concepts, focusing on topics such as lexical scoping, closure, call stack, binding, and callbacks. By learning these concepts, you will deepen your understanding of the language and enhance your ability to write more sophisticated JavaScript code.
