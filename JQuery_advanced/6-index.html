@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+	<meta charset="utf-8" />
+	<title>Task 0</title>
+	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+		integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous">
+
+		</script>
+
+</head>
+
+<body>
+
+</body>
+<script type="application/javascript">
+	function createFamilyTree() {
+		$("body").append($("<table>").append($("<thead>").append($("<tr>").append($("<th>").text("Firstname"), $("<th>").text("Lastname"))), $("<tbody>")));
+	}
+	createFamilyTree();
+
+	function addNewMember(firstName, lastName, position) {
+		if (position && position === "before")
+		{
+			$("tbody").prepend($("<tr>").append($("<td>").text(firstName), $("<td>").text(lastName), $("<td>").text("(x)")));
+		} else {
+			$("tbody").append($("<tr>").append($("<td>").text(firstName), $("<td>").text(lastName), $("<td>").text("(x)")));
+		}
+
+		let xButton = $("td:contains('(x)')");
+
+		xButton.css("background-color", "orange");
+		xButton.on("click", function () {
+			$(this).parent().remove();
+		});
+	}
+
+	function createForm() {
+		const input1 = $("<input>").attr("type", "text");
+		const input2 = $("<input>").attr("type", "text");
+		const submit = $("<input>").attr({type: "submit", value: "Submit"});
+		const select = $("<select>").append($("<option>").attr("value", "before").text("Before"), $("<option>").attr("value", "after").text("After"));
+		$("table").before(input1, input2, select, submit);
+	}
+	
+	createForm();
+
+	$("input[value='Submit']").on("click", function () {
+		let newFirstName = $("input").first().val();
+		let newLastName = $("input:nth-of-type(2)").val();
+		let newPosition = $("select").val();
+
+		addNewMember(newFirstName, newLastName, newPosition);
+	})
+</script>
+
+</html>
