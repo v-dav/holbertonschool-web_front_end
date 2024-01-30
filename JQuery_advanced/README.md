@@ -25,6 +25,10 @@ Welcome to the jQuery project! In this repository, you will explore and practice
 - [jQuery API Documentation](https://api.jquery.com/)
 - [Json server](https://www.npmjs.com/package/json-server)
 
+## ⚙️ Previous project
+
+[jQuery Beginner](https://github.com/v-dav/holbertonschool-higher_level_programming/tree/main/javascript-web_jquery)
+
 ##  🙇 Author
 
 [Vladimir Davidov](https://github.com/v-dav) - Holberton School
