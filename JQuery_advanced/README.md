@@ -2,6 +2,8 @@
 
 ![jQuery](https://img.shields.io/badge/jQuery-JAVASCRIPT_LIBRARY-blue?style=for-the-badge&logo=jquery&logoColor=white)
 
+![image](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/33426a47-c888-4c17-85a4-e3ee2ecd06c2)
+
 
 ## 🧐 Project Overview
 
