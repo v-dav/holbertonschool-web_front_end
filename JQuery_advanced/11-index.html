@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+	<meta charset="utf-8" />
+	<title>Task 0</title>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+</body>
+<script type="application/javascript">
+	function addPostRow(data) {
+		let paragraph = $("<p>").append($('<span>').text(`Post created with id ${data.id}, title: ${data.title}, author: ${data.author}`));
+		$('body').append(paragraph);
+	}
+
+	function listPosts() {
+		$.ajax({
+			method: "GET",
+			url: `http://localhost:3000/posts`,
+			dataType: 'json',
+			success: function (data) {
+				data.forEach(post => {
+					addPostRow(post);
+				});
+			},
+			error: function () {
+				alert('Server Error');
+			}
+		});
+	}
+
+	function buildForm() {
+		$('body').append($('<form>'));
+		$('form').append($('<div>').append($('<label>').attr("for", "author").text("Author"), $('<input>').attr({ type: "text", id: "author" })));
+		$('form').append($('<div>').append($('<label>').attr("for", "title").text("Title"), $('<textarea>').attr("id", "title")));
+		$('form').append($('<input>').attr({ type: "submit", value: "Submit" }));
+
+		$("form").submit(function (event) {
+			event.preventDefault();
+			sendForm();
+		})
+	}
+
+	function sendForm() {
+		$('form').after("<p>About to send the query to the API</p>");
+		let author = $('input#author').val();
+		let title = $('textarea#title').val();
+		let data = {
+			title: title,
+			author: author
+		}
+		$.ajax({
+			type: "POST",
+			url: "http://localhost:3000/posts",
+			contentType: "application/json",
+			data: JSON.stringify(data),
+			success: function (data) {
+				setTimeout(() => {$("form + p").remove()}, "1000");
+				addPostRow(data);
+			},
+			error: function () {
+				alert("Error sending the POST query");
+			}
+		});
+	}
+
+	$(document).ready(function () {
+		listPosts();
+		buildForm();
+	})
+</script>
+
+</html>
