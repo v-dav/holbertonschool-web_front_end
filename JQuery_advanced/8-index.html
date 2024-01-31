@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+	<meta charset="utf-8" />
+	<title>Task 0</title>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+</body>
+<script type="application/javascript">
+	function createSearchForm() {
+		$('body').append($("<input>").attr("type", "text"));
+		$('body').append($("<input>").attr({ type: "submit", value: "Submit" }));
+		$('body').append($("<ul>"));
+		$('body').append($('<ul>').attr("id", "pagination"));
+
+		$("input[type='submit']").on("click", function () {
+			$("ul:not([id='pagination']").empty();
+			let searchText = $("input[type='text']").val();
+			queryWikipedia(searchText);
+		});
+	}
+
+	function addNewArticle(id, title, snippet) {
+		const li = $('<li>').append($("<p>").append($('<span>').text(id + " - "), $("<b>").text(title)), $("<p>").html(snippet));
+		$("ul:not([id='pagination']").append(li);
+	}
+
+	function queryWikipedia(search, offset = 0) {
+		let trimmedSearch = encodeURIComponent(search.trim());
+		let itemsPerPage = 10;
+		let url = `https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&utf8=1&formatversion=2&srsearch=${trimmedSearch}&srprop=snippet&explaintext=1&sroffset=${offset}&srlimit=${itemsPerPage}`;
+		$.ajax({
+			url: url,
+			dataType: 'jsonp',
+			success: function (data) {
+				let resultsList = data.query.search;
+				resultsList.forEach(result => {
+					addNewArticle(result.pageid, result.title, result.snippet);
+				});
+				buildPagination(data.query.searchinfo.totalhits, itemsPerPage, offset);
+			},
+			error: function (error) {
+				console.log('Error:', error);
+			}
+		});
+	}
+
+	$(document).ready(function () {
+		createSearchForm();
+	});
+
+	function buildPagination(numberOfItems, itemsPerPage, currentOffset) {
+		$('ul#pagination').empty();
+		for (let page = 1; page <= Math.ceil(numberOfItems / itemsPerPage); page++) {
+			const listItem = $('<li>').attr("value", page).css({display: "inline-block", "list-style-type": "none", 'margin-left': "10px", cursor: "pointer"}).text(`${page}`);
+			
+			if (page === (currentOffset / itemsPerPage) + 1) {
+				listItem.css("font-weight", "bold");
+			}
+			$('#pagination').append(listItem);
+		}
+		$('ul#pagination li').on("click", function () {
+			$("ul:not([id='pagination']").empty();
+			let pageNumber = $(this).val();
+			let searchText = $("input[type='text']").val();
+			queryWikipedia(searchText, (pageNumber - 1) * itemsPerPage);
+		})
+	}
+</script>
+
+</html>
