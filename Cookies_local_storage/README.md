@@ -2,9 +2,10 @@
 
 ![HTML](https://img.shields.io/badge/HTML-5-blue?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-3-blue?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-Programming-yellow?style=for-the-badge&logo=javascript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge&logo=javascript&logoColor=white)
 
-![image](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/0516c22c-d1ad-410d-ac0e-7c48181f5a98)
+![image](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/266f8ddc-84d6-4b5b-beee-30de8f14d11e)
+
 
 
 ## 🧐 Project Overview
