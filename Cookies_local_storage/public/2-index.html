@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document 1</title>
+</head>
+<body>
+	<h1>Login to the website</h1>
+	<input type="text" id="firstname" placeholder="Firstname">
+	<input type="text" id="email" placeholder="Email">
+	<button onclick="setCookies()">Log me in</button>
+	<h1>Cookies</h1>
+	<button onclick="showCookies()">Show the cookies</button>
+	<script>
+		function setCookies() {
+			// Get input values
+			let firstname = document.getElementById("firstname").value;
+			let email = document.getElementById("email").value;
+
+			// Set expiration date string
+			let expirationDate = new Date();
+			expirationDate.setTime(expirationDate.getTime() + (10*24*60*60*1000))
+			let expireUTC = expirationDate.toUTCString();
+
+			// Create formatted string for cookie object
+			let info_firstname = `firstname=${firstname}; expires=${expireUTC}; path=/`;
+			let info_email = `email=${email}; expires=${expireUTC}; path=/`;
+
+			// Set the cookie
+			document.cookie = info_firstname;
+			document.cookie = info_email;
+		}
+
+		function showCookies() {
+			let p = document.createElement("p");
+			p.innerHTML = `Email: ${getCookie("email")} - Firstname: ${getCookie("firstname")}`;
+			document.body.appendChild(p);
+		}
+
+		function getCookie(name) {
+			let cookieArray = document.cookie.split(';');
+			for (let i = 0; i < cookieArray.length; i++) {
+				let cookie = cookieArray[i].trim();
+				if (cookie.startsWith(name + "=")) {
+					return cookie.substring(name.length + 1);
+				}
+			}
+			return "";
+		}
+	</script>
+</body>
+</html>
