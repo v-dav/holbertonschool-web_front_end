@@ -31,6 +31,10 @@ To gain insights into working with cookies and local storage, it's recommended t
 - [js-cookie](https://github.com/js-cookie/js-cookie)
 - [Web storage](https://www.w3schools.com/html/html5_webstorage.asp)
 
+## 📸 Screenshot (file 7-index.html)
+![f5b5d66a806111a00d3b](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/9a7af9fb-23ad-406d-a971-7bb3f2d4c6b9)
+
+
 ##  🙇 Author
 
 [Vladimir Davidov](https://github.com/v-dav) - Holberton School
